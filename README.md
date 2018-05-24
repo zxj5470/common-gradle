@@ -31,6 +31,7 @@
 # Notes
 > - Badges declare that it is the latest version ~
 > - Not specifying repository means that it is in the `mavenCentral()`
+> You'd better consider whether to use `implementation` or `api` instead of `compile`
 
 # jars
 
@@ -71,7 +72,7 @@ compile "com.ibm.db2.jcc:db2jcc4:10.1"
 ### Oracle
 > Do not ask why it was... Do you know the law company :joy:
 ```gradle
-repositories{
+repositories {
     maven {
         url 'https://raw.github.com/zxj5470/personalMaven/master/'
     }
@@ -120,13 +121,13 @@ repositories {
 
 ## google
 ```gradle
-repository{
+repositories {
     google()
 }
 ```
 ## jcenter
 ```gradle
-repository{
+repositories {
     jcenter()
 }
 ```
@@ -138,7 +139,7 @@ repositories {
 ```
 ## personal (never mind)
 ```gradle
-repositories{
+repositories {
     maven {
         url 'https://raw.github.com/zxj5470/personalMaven/master/'
     }
