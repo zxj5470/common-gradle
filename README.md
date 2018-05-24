@@ -36,30 +36,30 @@
 
 ## JDBC
 ### MySQL
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/badge.svg)](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/)
 ```groovy
 compile 'mysql:mysql-connector-java:8.0.11'
 ```
 
 ### SQLite
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc)
 ```groovy
 compile 'org.xerial:sqlite-jdbc:3.21.0.1'
 ```
 ### MSSQL
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
 ```groovy
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.5.2.jre9-preview'
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.4.0.jre8'
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.2.0.jre7'
 ```
 ### MongoDB
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.mongodb/mongo-java-driver/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.mongodb/mongo-java-driver/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
 ```groovy
 compile "org.mongodb:mongo-java-driver:3.7.0"
 ```
 ### postgresql
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql/badge.svg)](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql)
 ```groovy
 compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
 ```
@@ -82,12 +82,12 @@ dependencies {
 ```
 ## JSON
 ### gson 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson)
 ```groovy
 implementation 'com.google.code.gson:gson:2.8.5' 
 ```
 ### fastjson
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson)
 
 ```groovy
 compile 'com.alibaba:fastjson:1.2.47'
@@ -95,14 +95,14 @@ compile 'com.alibaba:fastjson:1.1.68.android'
 ```
 
 ### Jackson
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind)
 
 ```groovy
 compile "com.fasterxml.jackson.core:jackson-databind:2.9.5"
 ```
 
 ### json-lib
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib)
 
 ```groovy
 compile "net.sf.json-lib:json-lib:2.4"
