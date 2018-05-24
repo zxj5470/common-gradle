@@ -37,40 +37,40 @@
 ## JDBC
 ### MySQL
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/)
-```groovy
+```gradle
 compile 'mysql:mysql-connector-java:8.0.11'
 ```
 
 ### SQLite
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc)
-```groovy
+```gradle
 compile 'org.xerial:sqlite-jdbc:3.21.0.1'
 ```
 ### MSSQL
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
-```groovy
+```gradle
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.5.2.jre9-preview'
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.4.0.jre8'
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.2.0.jre7'
 ```
 ### MongoDB
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.mongodb/mongo-java-driver/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
-```groovy
+```gradle
 compile "org.mongodb:mongo-java-driver:3.7.0"
 ```
 ### postgresql
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql)
-```groovy
+```gradle
 compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
 ```
 
 ### DB2
-```groovy
+```gradle
 compile "com.ibm.db2.jcc:db2jcc4:10.1"
 ```
 ### Oracle
 > Do not ask why it was... Do you know the law company :joy:
-```groovy
+```gradle
 repositories{
     maven {
         url 'https://raw.github.com/zxj5470/personalMaven/master/'
@@ -83,13 +83,13 @@ dependencies {
 ## JSON
 ### gson 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson)
-```groovy
+```gradle
 implementation 'com.google.code.gson:gson:2.8.5' 
 ```
 ### fastjson
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson)
 
-```groovy
+```gradle
 compile 'com.alibaba:fastjson:1.2.47'
 compile 'com.alibaba:fastjson:1.1.68.android'
 ```
@@ -97,14 +97,14 @@ compile 'com.alibaba:fastjson:1.1.68.android'
 ### Jackson
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind)
 
-```groovy
+```gradle
 compile "com.fasterxml.jackson.core:jackson-databind:2.9.5"
 ```
 
 ### json-lib
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib)
 
-```groovy
+```gradle
 compile "net.sf.json-lib:json-lib:2.4"
 ```
 
@@ -112,32 +112,32 @@ compile "net.sf.json-lib:json-lib:2.4"
 # Repositories
 
 ## Maven Central
-```groovy
+```gradle
 repositories {
     mavenCentral()
 }
 ```
 
 ## google
-```groovy
+```gradle
 repository{
     google()
 }
 ```
 ## jcenter
-```groovy
+```gradle
 repository{
     jcenter()
 }
 ```
 ## jitpack jars
-```groovy
+```gradle
 repositories {
     maven { url 'https://jitpack.io' }
 }
 ```
 ## personal (never mind)
-```groovy
+```gradle
 repositories{
     maven {
         url 'https://raw.github.com/zxj5470/personalMaven/master/'
