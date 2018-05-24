@@ -29,8 +29,8 @@
 
 <!-- /code_chunk_output -->
 # Notes
-> - Badges declare the latest version~ 
-> - Not specifying repository means that it is in `mavenCentral()`
+> - Badges declare that it is the latest version ~
+> - Not specifying repository means that it is in the `mavenCentral()`
 
 # jars
 
