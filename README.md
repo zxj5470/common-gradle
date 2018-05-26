@@ -50,7 +50,9 @@
 ```gradle
 buildscript {
 	ext.springBootVersion = "2.0.2.RELEASE"
-	classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+	dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+    }
 }
 dependencies {
 	compile "org.springframework.boot:spring-boot-starter-web"
