@@ -35,6 +35,7 @@
     - [jcenter](#jcenter)
     - [jitpack jars](#jitpack-jars)
     - [personal (never mind)](#personal-never-mind)
+    - [Use gradle.properties instead of `ext.xxx` in buildscript](#use-gradleproperties-instead-of-extxxx-in-buildscript)
 
 <!-- /TOC -->
 # Notes
@@ -215,3 +216,5 @@ repositories {
     }
 }
 ```
+
+## Use gradle.properties instead of `ext.xxx` in buildscript
