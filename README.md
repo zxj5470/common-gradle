@@ -22,12 +22,12 @@
         - [JSON](#json)
             - [gson](#gson)
             - [fastjson](#fastjson)
-            - [Jackson](#jackson)
+            - [jackson](#jackson)
             - [json-lib](#json-lib)
         - [Toml](#toml)
             - [toml4j](#toml4j)
         - [HTML](#html)
-            - [Jsoup](#jsoup)
+            - [jsoup](#jsoup)
     - [Kotlin](#kotlin)
 - [Repositories](#repositories)
     - [Maven Central](#maven-central)
@@ -133,10 +133,11 @@ implementation 'com.google.code.gson:gson:2.8.5'
 
 ```gradle
 compile 'com.alibaba:fastjson:1.2.47'
+# for Android
 compile 'com.alibaba:fastjson:1.1.68.android'
 ```
 
-#### Jackson
+#### jackson
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind)
 
 ```gradle
@@ -156,7 +157,7 @@ compile "net.sf.json-lib:json-lib:2.4"
 compile 'com.moandjiezana.toml:toml4j:0.7.2'
 ```
 ### HTML
-#### Jsoup
+#### jsoup
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.jsoup/jsoup/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.jsoup/jsoup/)
 ```gradle
 compile "org.jsoup:jsoup:1.11.3"
