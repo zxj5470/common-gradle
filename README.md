@@ -134,7 +134,7 @@ implementation 'com.google.code.gson:gson:2.8.5'
 
 ```gradle
 compile 'com.alibaba:fastjson:1.2.47'
-# for Android
+// or for Android
 compile 'com.alibaba:fastjson:1.1.68.android'
 ```
 
@@ -163,6 +163,15 @@ compile 'com.moandjiezana.toml:toml4j:0.7.2'
 ```gradle
 compile "org.jsoup:jsoup:1.11.3"
 ```
+## Utils
+### Guava
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.guava/guava/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.google.guava/guava/)
+```gradle
+compile 'com.google.guava:guava:25.1-jre'
+// or, for Android:
+api 'com.google.guava:guava:25.1-android'
+```
+
 ## Kotlin
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.jetbrains.kotlin/kotlin-stdlib-jdk8/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.jetbrains.kotlin/kotlin-stdlib-jdk8/)
 ```gradle
