@@ -54,7 +54,7 @@
 ### Spring
 #### spring-boot
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.springframework.boot/spring-boot-starter-web/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.springframework.boot/spring-boot-starter-web/)
-```gradle
+```groovy
 buildscript {
 	ext.springBootVersion = "2.0.2.RELEASE"
 	dependencies {
@@ -77,7 +77,7 @@ compile 'io.vertx:vertx-core:+'
 ```
 
 #### vertx-kotlin and Kotlin-Coroutines
-```gradle
+```groovy
 compile 'io.vertx:vertx-lang-kotlin:+'
 compile 'io.vertx:vertx-lang-kotlin-coroutines:+'
 ```
@@ -85,40 +85,40 @@ compile 'io.vertx:vertx-lang-kotlin-coroutines:+'
 ## JDBC
 ### MySQL
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/)
-```gradle
+```groovy
 compile 'mysql:mysql-connector-java:8.0.11'
 ```
 
 ### SQLite
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc)
-```gradle
+```groovy
 compile 'org.xerial:sqlite-jdbc:3.21.0.1'
 ```
 ### MSSQL
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
-```gradle
+```groovy
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.5.2.jre9-preview'
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.4.0.jre8'
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.2.0.jre7'
 ```
 ### MongoDB
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.mongodb/mongo-java-driver/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
-```gradle
+```groovy
 compile "org.mongodb:mongo-java-driver:3.7.0"
 ```
 ### postgresql
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql)
-```gradle
+```groovy
 compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
 ```
 
 ### DB2
-```gradle
+```groovy
 compile "com.ibm.db2.jcc:db2jcc4:10.1"
 ```
 ### Oracle
 > Do not ask why it was... Do you know the law company :joy:
-```gradle
+```groovy
 repositories {
     maven {
         url 'https://raw.github.com/zxj5470/personalMaven/master/'
@@ -132,13 +132,13 @@ dependencies {
 ### JSON
 #### gson 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson)
-```gradle
+```groovy
 implementation 'com.google.code.gson:gson:2.8.5' 
 ```
 #### fastjson
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson)
 
-```gradle
+```groovy
 compile 'com.alibaba:fastjson:1.2.47'
 // or for Android
 compile 'com.alibaba:fastjson:1.1.68.android'
@@ -147,39 +147,39 @@ compile 'com.alibaba:fastjson:1.1.68.android'
 #### jackson
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind)
 
-```gradle
+```groovy
 compile "com.fasterxml.jackson.core:jackson-databind:2.9.5"
 ```
 
 #### json-lib
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib)
 
-```gradle
+```groovy
 compile "net.sf.json-lib:json-lib:2.4"
 ```
 ### Toml
 #### toml4j
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.moandjiezana.toml/toml4j/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.moandjiezana.toml/toml4j/)
-```gradle
+```groovy
 compile 'com.moandjiezana.toml:toml4j:0.7.2'
 ```
 ### HTML
 #### jsoup
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.jsoup/jsoup/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.jsoup/jsoup/)
-```gradle
+```groovy
 compile "org.jsoup:jsoup:1.11.3"
 ```
 
 ## Utils
 ### Apache commons
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-lang3/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-lang3/)
-```gradle
+```groovy
 compile 'org.apache.commons:commons-lang3:3.7'
 ```
 
 ### Guava
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.guava/guava/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.google.guava/guava/)
-```gradle
+```groovy
 compile 'com.google.guava:guava:25.1-jre'
 // or, for Android:
 api 'com.google.guava:guava:25.1-android'
@@ -187,13 +187,13 @@ api 'com.google.guava:guava:25.1-android'
 
 ### vavr
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.vavr/vavr/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.vavr/vavr/)
-```gradle
+```groovy
 compile 'io.vavr:vavr:'
 ```
 
 ## Kotlin
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.jetbrains.kotlin/kotlin-stdlib-jdk8/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.jetbrains.kotlin/kotlin-stdlib-jdk8/)
-```gradle
+```groovy
 buildscript {
 	ext.kotlin_version = '1.2.31'
     repositories {
@@ -211,7 +211,7 @@ dependencies {
 
 ### Arrow.kt
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.arrow-kt/arrow-core/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.arrow-kt/arrow-core/)
-```gradle
+```groovy
 dependencies {
     compile 'io.arrow-kt:arrow-core:0.7.2'
     compile 'io.arrow-kt:arrow-syntax:0.7.2'
@@ -226,32 +226,32 @@ see more at [arrow-kt/arrow](https://github.com/arrow-kt/arrow)
 # Repositories
 
 ## Maven Central
-```gradle
+```groovy
 repositories {
     mavenCentral()
 }
 ```
 
 ## google
-```gradle
+```groovy
 repositories {
     google()
 }
 ```
 ## jcenter
-```gradle
+```groovy
 repositories {
     jcenter()
 }
 ```
 ## jitpack jars
-```gradle
+```groovy
 repositories {
     maven { url 'https://jitpack.io' }
 }
 ```
 ## personal (never mind)
-```gradle
+```groovy
 repositories {
     maven {
         url 'https://raw.github.com/zxj5470/personalMaven/master/'
