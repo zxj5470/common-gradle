@@ -4,40 +4,46 @@
 - [common-gradle](#common-gradle)
 - [Notes](#notes)
 - [jars](#jars)
-    - [Framework](#framework)
-        - [Spring](#spring)
-            - [spring-boot](#spring-boot)
-        - [Vert.x](#vertx)
-            - [vertx-core](#vertx-core)
-            - [vertx-kotlin and Kotlin-Coroutines](#vertx-kotlin-and-kotlin-coroutines)
-    - [JDBC](#jdbc)
-        - [MySQL](#mysql)
-        - [SQLite](#sqlite)
-        - [MSSQL](#mssql)
-        - [MongoDB](#mongodb)
-        - [postgresql](#postgresql)
-        - [DB2](#db2)
-        - [Oracle](#oracle)
-    - [Parser](#parser)
-        - [JSON](#json)
-            - [gson](#gson)
-            - [fastjson](#fastjson)
-            - [jackson](#jackson)
-            - [json-lib](#json-lib)
-        - [Toml](#toml)
-            - [toml4j](#toml4j)
-        - [HTML](#html)
-            - [jsoup](#jsoup)
-    - [Kotlin](#kotlin)
+	- [Framework](#framework)
+		- [Spring](#spring)
+			- [spring-boot](#spring-boot)
+		- [Vert.x](#vertx)
+			- [vertx-core](#vertx-core)
+			- [vertx-kotlin and Kotlin-Coroutines](#vertx-kotlin-and-kotlin-coroutines)
+	- [JDBC](#jdbc)
+		- [MySQL](#mysql)
+		- [SQLite](#sqlite)
+		- [MSSQL](#mssql)
+		- [MongoDB](#mongodb)
+		- [postgresql](#postgresql)
+		- [DB2](#db2)
+		- [Oracle](#oracle)
+	- [Parser](#parser)
+		- [JSON](#json)
+			- [gson](#gson)
+			- [fastjson](#fastjson)
+			- [jackson](#jackson)
+			- [json-lib](#json-lib)
+		- [Toml](#toml)
+			- [toml4j](#toml4j)
+		- [HTML](#html)
+			- [jsoup](#jsoup)
+	- [Utils](#utils)
+		- [Apache commons](#apache-commons)
+		- [Guava](#guava)
+		- [vavr](#vavr)
+	- [Kotlin](#kotlin)
+		- [Arrow.kt](#arrowkt)
 - [Repositories](#repositories)
-    - [Maven Central](#maven-central)
-    - [google](#google)
-    - [jcenter](#jcenter)
-    - [jitpack jars](#jitpack-jars)
-    - [personal (never mind)](#personal-never-mind)
-    - [Use gradle.properties instead of `ext.xxx` in buildscript](#use-gradleproperties-instead-of-extxxx-in-buildscript)
+	- [Maven Central](#maven-central)
+	- [google](#google)
+	- [jcenter](#jcenter)
+	- [jitpack jars](#jitpack-jars)
+	- [personal (never mind)](#personal-never-mind)
+	- [Use gradle.properties instead of `ext.xxx` in buildscript](#use-gradleproperties-instead-of-extxxx-in-buildscript)
 
 <!-- /TOC -->
+
 # Notes
 > - Badges declare that it is the latest version ~ so it may be not the same to `compile 'orgId:pkgName:$version'`
 > - Not specifying repository means that it is in the `mavenCentral()`
@@ -163,13 +169,26 @@ compile 'com.moandjiezana.toml:toml4j:0.7.2'
 ```gradle
 compile "org.jsoup:jsoup:1.11.3"
 ```
+
 ## Utils
+### Apache commons
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-lang3/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-lang3/)
+```gradle
+compile 'org.apache.commons:commons-lang3:3.7'
+```
+
 ### Guava
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.guava/guava/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.google.guava/guava/)
 ```gradle
 compile 'com.google.guava:guava:25.1-jre'
 // or, for Android:
 api 'com.google.guava:guava:25.1-android'
+```
+
+### vavr
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.vavr/vavr/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.vavr/vavr/)
+```gradle
+compile 'io.vavr:vavr:'
 ```
 
 ## Kotlin
@@ -190,6 +209,20 @@ dependencies {
 
 ```
 
+### Arrow.kt
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.arrow-kt/arrow-core/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.arrow-kt/arrow-core/)
+```gradle
+dependencies {
+    compile 'io.arrow-kt:arrow-core:0.7.2'
+    compile 'io.arrow-kt:arrow-syntax:0.7.2'
+    compile 'io.arrow-kt:arrow-typeclasses:0.7.2' 
+    compile 'io.arrow-kt:arrow-data:0.7.2' 
+    compile 'io.arrow-kt:arrow-instances-core:0.7.2'
+    compile 'io.arrow-kt:arrow-instances-data:0.7.2'
+    kapt    'io.arrow-kt:arrow-annotations-processor:0.7.2' 
+}
+```
+see more at [arrow-kt/arrow](https://github.com/arrow-kt/arrow)
 # Repositories
 
 ## Maven Central
