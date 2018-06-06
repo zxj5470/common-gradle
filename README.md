@@ -34,6 +34,8 @@
 		- [vavr](#vavr)
 	- [Kotlin](#kotlin)
 		- [Arrow.kt](#arrowkt)
+	- [Android](#android)
+		- [android-ktx](#android-ktx)
 - [Repositories](#repositories)
 	- [Maven Central](#maven-central)
 	- [google](#google)
@@ -188,7 +190,7 @@ api 'com.google.guava:guava:25.1-android'
 ### vavr
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.vavr/vavr/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.vavr/vavr/)
 ```groovy
-compile 'io.vavr:vavr:'
+compile 'io.vavr:vavr:0.9.2'
 ```
 
 ## Kotlin
@@ -206,7 +208,6 @@ buildscript {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
-
 ```
 
 ### Arrow.kt
@@ -223,6 +224,19 @@ dependencies {
 }
 ```
 see more at [arrow-kt/arrow](https://github.com/arrow-kt/arrow)
+
+## Android
+### android-ktx
+```groovy
+repositories {
+    google()
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.0.0-alpha1'
+}
+```
+
 # Repositories
 
 ## Maven Central
