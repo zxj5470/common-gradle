@@ -1,50 +1,5 @@
 # common-gradle
-<!-- TOC -->
-
-- [common-gradle](#common-gradle)
-- [Notes](#notes)
-- [jars](#jars)
-	- [Framework](#framework)
-		- [Spring](#spring)
-			- [spring-boot](#spring-boot)
-		- [Vert.x](#vertx)
-			- [vertx-core](#vertx-core)
-			- [vertx-kotlin and Kotlin-Coroutines](#vertx-kotlin-and-kotlin-coroutines)
-	- [JDBC](#jdbc)
-		- [MySQL](#mysql)
-		- [SQLite](#sqlite)
-		- [MSSQL](#mssql)
-		- [MongoDB](#mongodb)
-		- [postgresql](#postgresql)
-		- [DB2](#db2)
-		- [Oracle](#oracle)
-	- [Parser](#parser)
-		- [JSON](#json)
-			- [gson](#gson)
-			- [fastjson](#fastjson)
-			- [jackson](#jackson)
-			- [json-lib](#json-lib)
-		- [Toml](#toml)
-			- [toml4j](#toml4j)
-		- [HTML](#html)
-			- [jsoup](#jsoup)
-	- [Utils](#utils)
-		- [Apache commons](#apache-commons)
-		- [Guava](#guava)
-		- [vavr](#vavr)
-	- [Kotlin](#kotlin)
-		- [Arrow.kt](#arrowkt)
-	- [Android](#android)
-		- [android-ktx](#android-ktx)
-- [Repositories](#repositories)
-	- [Maven Central](#maven-central)
-	- [google](#google)
-	- [jcenter](#jcenter)
-	- [jitpack jars](#jitpack-jars)
-	- [personal (never mind)](#personal-never-mind)
-	- [Use gradle.properties instead of `ext.xxx` in buildscript](#use-gradleproperties-instead-of-extxxx-in-buildscript)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [common-gradle](#common-gradle)auto- [Notes](#notes)auto- [jars](#jars)auto    - [Framework](#framework)auto        - [Spring](#spring)auto            - [spring-boot](#spring-boot)auto        - [Vert.x](#vertx)auto            - [vertx-core](#vertx-core)auto            - [vertx-kotlin and Kotlin-Coroutines](#vertx-kotlin-and-kotlin-coroutines)auto    - [JDBC](#jdbc)auto        - [MySQL](#mysql)auto        - [SQLite](#sqlite)auto        - [MSSQL](#mssql)auto        - [MongoDB](#mongodb)auto        - [postgresql](#postgresql)auto        - [DB2](#db2)auto        - [Oracle](#oracle)auto    - [Parser](#parser)auto        - [JSON](#json)auto            - [gson](#gson)auto            - [fastjson](#fastjson)auto            - [jackson](#jackson)auto            - [json-lib](#json-lib)auto        - [Toml](#toml)auto            - [toml4j](#toml4j)auto        - [HTML](#html)auto            - [jsoup](#jsoup)auto    - [Utils](#utils)auto        - [Apache commons](#apache-commons)auto        - [Guava](#guava)auto        - [vavr](#vavr)auto    - [Kotlin](#kotlin)auto        - [Arrow.kt](#arrowkt)auto    - [Android](#android)auto        - [android-ktx](#android-ktx)auto- [Repositories](#repositories)auto    - [Maven Central](#maven-central)auto    - [google](#google)auto    - [jcenter](#jcenter)auto    - [jitpack jars](#jitpack-jars)auto    - [personal (never mind)](#personal-never-mind)auto    - [Use gradle.properties instead of `ext.xxx` in buildscript](#use-gradleproperties-instead-of-extxxx-in-buildscript)autoauto<!-- /TOC -->
 
 # Notes
 > - Badges declare that it is the latest version ~ so it may be not the same to `compile 'orgId:pkgName:$version'`
@@ -70,7 +25,7 @@ dependencies {
 ```
 ### Vert.x
 **Notes:**
-> Vert.x all packages' latest version is all the same
+> Vert.x all packages' latest version number is all the same
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.vertx/vertx-core/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.vertx/vertx-core)
 #### vertx-core
@@ -224,6 +179,12 @@ dependencies {
 }
 ```
 see more at [arrow-kt/arrow](https://github.com/arrow-kt/arrow)
+## Http
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.squareup.okhttp3/okhttp/badge.svg?style=flat-square)](https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp)
+```groovy
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+}
 
 ## Android
 ### android-ktx
