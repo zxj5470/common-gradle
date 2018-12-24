@@ -1,5 +1,50 @@
-# common-gradle
-<!-- TOC -->autoauto- [common-gradle](#common-gradle)auto- [Notes](#notes)auto- [jars](#jars)auto    - [Framework](#framework)auto        - [Spring](#spring)auto            - [spring-boot](#spring-boot)auto        - [Vert.x](#vertx)auto            - [vertx-core](#vertx-core)auto            - [vertx-kotlin and Kotlin-Coroutines](#vertx-kotlin-and-kotlin-coroutines)auto    - [JDBC](#jdbc)auto        - [MySQL](#mysql)auto        - [SQLite](#sqlite)auto        - [MSSQL](#mssql)auto        - [MongoDB](#mongodb)auto        - [postgresql](#postgresql)auto        - [DB2](#db2)auto        - [Oracle](#oracle)auto    - [Parser](#parser)auto        - [JSON](#json)auto            - [gson](#gson)auto            - [fastjson](#fastjson)auto            - [jackson](#jackson)auto            - [json-lib](#json-lib)auto        - [Toml](#toml)auto            - [toml4j](#toml4j)auto        - [HTML](#html)auto            - [jsoup](#jsoup)auto    - [Utils](#utils)auto        - [Apache commons](#apache-commons)auto        - [Guava](#guava)auto        - [vavr](#vavr)auto    - [Kotlin](#kotlin)auto        - [Arrow.kt](#arrowkt)auto    - [Android](#android)auto        - [android-ktx](#android-ktx)auto- [Repositories](#repositories)auto    - [Maven Central](#maven-central)auto    - [google](#google)auto    - [jcenter](#jcenter)auto    - [jitpack jars](#jitpack-jars)auto    - [personal (never mind)](#personal-never-mind)auto    - [Use gradle.properties instead of `ext.xxx` in buildscript](#use-gradleproperties-instead-of-extxxx-in-buildscript)autoauto<!-- /TOC -->
+<!-- vscode-markdown-toc -->
+* 1. [Framework](#Framework)
+	* 1.1. [Spring](#Spring)
+		* 1.1.1. [spring-boot](#spring-boot)
+	* 1.2. [Vert.x](#Vert.x)
+		* 1.2.1. [vertx-core](#vertx-core)
+		* 1.2.2. [vertx-kotlin and Kotlin-Coroutines](#vertx-kotlinandKotlin-Coroutines)
+* 2. [JDBC](#JDBC)
+	* 2.1. [MySQL](#MySQL)
+	* 2.2. [SQLite](#SQLite)
+	* 2.3. [MSSQL](#MSSQL)
+	* 2.4. [MongoDB](#MongoDB)
+	* 2.5. [postgresql](#postgresql)
+	* 2.6. [DB2](#DB2)
+	* 2.7. [Oracle](#Oracle)
+* 3. [Parser](#Parser)
+	* 3.1. [JSON](#JSON)
+		* 3.1.1. [gson](#gson)
+		* 3.1.2. [fastjson](#fastjson)
+		* 3.1.3. [jackson](#jackson)
+		* 3.1.4. [json-lib](#json-lib)
+	* 3.2. [Toml](#Toml)
+		* 3.2.1. [toml4j](#toml4j)
+	* 3.3. [HTML](#HTML)
+		* 3.3.1. [jsoup](#jsoup)
+* 4. [Utils](#Utils)
+	* 4.1. [Apache commons](#Apachecommons)
+	* 4.2. [Guava](#Guava)
+	* 4.3. [vavr](#vavr)
+* 5. [Kotlin](#Kotlin)
+	* 5.1. [Arrow.kt](#Arrow.kt)
+* 6. [Http](#Http)
+* 7. [Android](#Android)
+	* 7.1. [android-ktx](#android-ktx)
+* 8. [Maven Central](#MavenCentral)
+* 9. [google](#google)
+* 10. [jcenter](#jcenter)
+* 11. [jitpack jars](#jitpackjars)
+* 12. [personal (never mind)](#personalnevermind)
+* 13. [Use gradle.properties instead of `ext.xxx` in buildscript](#Usegradle.propertiesinsteadofext.xxxinbuildscript)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc --># common-gradle
+
 
 # Notes
 > - Badges declare that it is the latest version ~ so it may be not the same to `compile 'orgId:pkgName:$version'`
@@ -7,9 +52,9 @@
 > - You'd better consider whether to use `implementation` or `api` instead of `compile`
 
 # jars
-## Framework
-### Spring
-#### spring-boot
+##  1. <a name='Framework'></a>Framework
+###  1.1. <a name='Spring'></a>Spring
+####  1.1.1. <a name='spring-boot'></a>spring-boot
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.springframework.boot/spring-boot-starter-web/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.springframework.boot/spring-boot-starter-web/)
 ```groovy
 buildscript {
@@ -23,57 +68,57 @@ dependencies {
 	testCompile "org.springframework.boot:spring-boot-starter-test"
 }
 ```
-### Vert.x
+###  1.2. <a name='Vert.x'></a>Vert.x
 **Notes:**
 > Vert.x all packages' latest version number is all the same
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.vertx/vertx-core/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.vertx/vertx-core)
-#### vertx-core
+####  1.2.1. <a name='vertx-core'></a>vertx-core
 ``` gradle
 compile 'io.vertx:vertx-core:+'
 ```
 
-#### vertx-kotlin and Kotlin-Coroutines
+####  1.2.2. <a name='vertx-kotlinandKotlin-Coroutines'></a>vertx-kotlin and Kotlin-Coroutines
 ```groovy
 compile 'io.vertx:vertx-lang-kotlin:+'
 compile 'io.vertx:vertx-lang-kotlin-coroutines:+'
 ```
 
-## JDBC
-### MySQL
+##  2. <a name='JDBC'></a>JDBC
+###  2.1. <a name='MySQL'></a>MySQL
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/mysql/mysql-connector-java/)
 ```groovy
 compile 'mysql:mysql-connector-java:8.0.11'
 ```
 
-### SQLite
+###  2.2. <a name='SQLite'></a>SQLite
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.xerial/sqlite-jdbc)
 ```groovy
 compile 'org.xerial:sqlite-jdbc:3.21.0.1'
 ```
-### MSSQL
+###  2.3. <a name='MSSQL'></a>MSSQL
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
 ```groovy
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.5.2.jre9-preview'
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.4.0.jre8'
 compile 'com.microsoft.sqlserver:mssql-jdbc:6.2.0.jre7'
 ```
-### MongoDB
+###  2.4. <a name='MongoDB'></a>MongoDB
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.mongodb/mongo-java-driver/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.microsoft.sqlserver/mssql-jdbc)
 ```groovy
 compile "org.mongodb:mongo-java-driver:3.7.0"
 ```
-### postgresql
+###  2.5. <a name='postgresql'></a>postgresql
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/postgresql/postgresql)
 ```groovy
 compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
 ```
 
-### DB2
+###  2.6. <a name='DB2'></a>DB2
 ```groovy
 compile "com.ibm.db2.jcc:db2jcc4:10.1"
 ```
-### Oracle
+###  2.7. <a name='Oracle'></a>Oracle
 > Do not ask why it was... Do you know the law company :joy:
 ```groovy
 repositories {
@@ -85,14 +130,14 @@ dependencies {
     compile "com.oracle:ojdbc6:11.1.0.7.0"
 }
 ```
-## Parser
-### JSON
-#### gson 
+##  3. <a name='Parser'></a>Parser
+###  3.1. <a name='JSON'></a>JSON
+####  3.1.1. <a name='gson'></a>gson 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.google.code.gson/gson)
 ```groovy
 implementation 'com.google.code.gson:gson:2.8.5' 
 ```
-#### fastjson
+####  3.1.2. <a name='fastjson'></a>fastjson
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.alibaba/fastjson)
 
 ```groovy
@@ -101,40 +146,40 @@ compile 'com.alibaba:fastjson:1.2.47'
 compile 'com.alibaba:fastjson:1.1.68.android'
 ```
 
-#### jackson
+####  3.1.3. <a name='jackson'></a>jackson
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.fasterxml.jackson.core/jackson-databind)
 
 ```groovy
 compile "com.fasterxml.jackson.core:jackson-databind:2.9.5"
 ```
 
-#### json-lib
+####  3.1.4. <a name='json-lib'></a>json-lib
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/net.sf.json-lib/json-lib)
 
 ```groovy
 compile "net.sf.json-lib:json-lib:2.4"
 ```
-### Toml
-#### toml4j
+###  3.2. <a name='Toml'></a>Toml
+####  3.2.1. <a name='toml4j'></a>toml4j
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.moandjiezana.toml/toml4j/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.moandjiezana.toml/toml4j/)
 ```groovy
 compile 'com.moandjiezana.toml:toml4j:0.7.2'
 ```
-### HTML
-#### jsoup
+###  3.3. <a name='HTML'></a>HTML
+####  3.3.1. <a name='jsoup'></a>jsoup
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.jsoup/jsoup/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.jsoup/jsoup/)
 ```groovy
 compile "org.jsoup:jsoup:1.11.3"
 ```
 
-## Utils
-### Apache commons
+##  4. <a name='Utils'></a>Utils
+###  4.1. <a name='Apachecommons'></a>Apache commons
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-lang3/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.apache.commons/commons-lang3/)
 ```groovy
 compile 'org.apache.commons:commons-lang3:3.7'
 ```
 
-### Guava
+###  4.2. <a name='Guava'></a>Guava
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.google.guava/guava/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/com.google.guava/guava/)
 ```groovy
 compile 'com.google.guava:guava:25.1-jre'
@@ -142,13 +187,13 @@ compile 'com.google.guava:guava:25.1-jre'
 api 'com.google.guava:guava:25.1-android'
 ```
 
-### vavr
+###  4.3. <a name='vavr'></a>vavr
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.vavr/vavr/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.vavr/vavr/)
 ```groovy
 compile 'io.vavr:vavr:0.9.2'
 ```
 
-## Kotlin
+##  5. <a name='Kotlin'></a>Kotlin
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.jetbrains.kotlin/kotlin-stdlib-jdk8/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/org.jetbrains.kotlin/kotlin-stdlib-jdk8/)
 ```groovy
 buildscript {
@@ -165,7 +210,7 @@ dependencies {
 }
 ```
 
-### Arrow.kt
+###  5.1. <a name='Arrow.kt'></a>Arrow.kt
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.arrow-kt/arrow-core/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/io.arrow-kt/arrow-core/)
 ```groovy
 dependencies {
@@ -179,15 +224,16 @@ dependencies {
 }
 ```
 see more at [arrow-kt/arrow](https://github.com/arrow-kt/arrow)
-## Http
+##  6. <a name='Http'></a>Http
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.squareup.okhttp3/okhttp/badge.svg?style=flat-square)](https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp)
 ```groovy
 dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
 }
+```
 
-## Android
-### android-ktx
+##  7. <a name='Android'></a>Android
+###  7.1. <a name='android-ktx'></a>android-ktx
 ```groovy
 repositories {
     google()
@@ -200,32 +246,32 @@ dependencies {
 
 # Repositories
 
-## Maven Central
+##  8. <a name='MavenCentral'></a>Maven Central
 ```groovy
 repositories {
     mavenCentral()
 }
 ```
 
-## google
+##  9. <a name='google'></a>google
 ```groovy
 repositories {
     google()
 }
 ```
-## jcenter
+##  10. <a name='jcenter'></a>jcenter
 ```groovy
 repositories {
     jcenter()
 }
 ```
-## jitpack jars
+##  11. <a name='jitpackjars'></a>jitpack jars
 ```groovy
 repositories {
     maven { url 'https://jitpack.io' }
 }
 ```
-## personal (never mind)
+##  12. <a name='personalnevermind'></a>personal (never mind)
 ```groovy
 repositories {
     maven {
@@ -234,4 +280,4 @@ repositories {
 }
 ```
 
-## Use gradle.properties instead of `ext.xxx` in buildscript
+##  13. <a name='Usegradle.propertiesinsteadofext.xxxinbuildscript'></a>Use gradle.properties instead of `ext.xxx` in buildscript
